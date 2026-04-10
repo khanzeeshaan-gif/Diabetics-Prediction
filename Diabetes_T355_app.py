@@ -26,7 +26,7 @@ if st.button("Predict"):
     # 4. Scale and Predict
     scaled_features = scaler.transform(features)
     prediction = model.predict(scaled_features)
-print(prediction[0])
+st.write(f"this is pred,{prediction[0]}")
     # if prediction[0] == 1:
     #     st.error("The model predicts a high risk of diabetes.")
     # else:
